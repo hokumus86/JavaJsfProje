@@ -20,9 +20,10 @@ public class LoginFilter implements Filter {
 		
 		LoginBean loginbean = (LoginBean) ((HttpServletRequest)request).getSession().getAttribute("loginbean");
 		
-		if(loginbean !=null && loginbean.isIslogedin()) {
+		if(loginbean ==null  ) {
+			
 			String path = ((HttpServletRequest)request).getContextPath();
-			((HttpServletResponse)response).sendRedirect(path+"/index.jsf");
+			((HttpServletResponse)response).sendRedirect(path+"/login.jsf");
 		}
 		chain.doFilter(request, response);
 		// TODO Auto-generated method stub

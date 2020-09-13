@@ -10,7 +10,7 @@
 <h:head>
 
 	<title>İlk sayfam</title>
-	<link href='http://fonts.googleapis.com/css?family=Raleway:400,200'
+	<link href='https://fonts.googleapis.com/css?family=Raleway:400,200'
 		rel='stylesheet' type='text/css' />
 	<link rel="stylesheet" href="resources/css/login.css" />
 	<link
@@ -64,8 +64,11 @@
 						<h:inputText type="password" class="form-control" value="#{loginbean.password}" />
 					</div>
 					<div align="center">
-						<h:commandButton class="btn btn-orange" value="GİRİŞ" onclick="#{loginbean.toLogin()} ">LOGIN</h:commandButton>
-					</div>
+                <h:commandButton class="btn btn-orange" value="GİRİŞ" action="#{loginbean.toLogin}"/>
+                <br />
+                <a href="index.jsf?faces-redirect=true">Üye Ol</a>
+                   
+                </div>
 
 				</div>
 
