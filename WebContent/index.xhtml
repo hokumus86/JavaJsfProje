@@ -56,15 +56,15 @@
 
 					<div class="control">
 						<div class="label">Email Address</div>
-						<input type="text" class="form-control" value="admin@gmail.com" />
+						<h:inputText type="text" class="form-control" value="#{loginbean.username}" />
 					</div>
 
 					<div class="control">
 						<div class="label">Password</div>
-						<input type="password" class="form-control" value="123456" />
+						<h:inputText type="password" class="form-control" value="#{loginbean.password}" />
 					</div>
 					<div align="center">
-						<button class="btn btn-orange">LOGIN</button>
+						<h:commandButton class="btn btn-orange" onclick="#{loginbean.toLogin()} ">LOGIN</h:commandButton>
 					</div>
 
 				</div>
