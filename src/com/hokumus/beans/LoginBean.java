@@ -1,15 +1,29 @@
 package com.hokumus.beans;
 
+import javax.faces.application.FacesMessage;
 import javax.faces.bean.ManagedBean;
+import javax.faces.bean.ManagedProperty;
 import javax.faces.bean.SessionScoped;
+import javax.faces.context.FacesContext;
 
 @ManagedBean(name = "loginbean")
 @SessionScoped
 public class LoginBean {
 
-	private String username = "hokumus";
-	private String password = "123";
+	private String username = "hokumus1";
+	private String password = "1234";
 	private boolean islogedin;
+
+	@ManagedProperty(value = "#{navigationsbean}")
+	private NavigationsBean navigationbean;
+
+	public NavigationsBean getNavigationbean() {
+		return navigationbean;
+	}
+
+	public void setNavigationbean(NavigationsBean navigationbean) {
+		this.navigationbean = navigationbean;
+	}
 
 	public String getUsername() {
 		return username;
@@ -34,17 +48,21 @@ public class LoginBean {
 	public void setIslogedin(boolean islogedin) {
 		this.islogedin = islogedin;
 	}
-	
+
 	public String toLogin() {
-		if(username.equals("hokumus1")&& password.equals("1234")) {
+		if (username.equals("hokumus1") && password.equals("1234")) {
 			System.out.println("login baþarýlý");
 			islogedin = true;
-			System.out.println(username +" " + password);
-		}else {
-			System.out.println("baþarýsýz");
+			System.out.println(username + " " + password);
+			return navigationbean.redirectIndex();
 		}
-		
-		return null;
+		FacesMessage msg = new FacesMessage("Login error!", "ERROR MSG");
+		msg.setSeverity(FacesMessage.SEVERITY_ERROR);
+		FacesContext.getCurrentInstance().addMessage(null, msg);
+
+		// To to login page
+		return navigationbean.redirectIndex();
+
 	}
 
 }
