@@ -20,6 +20,6 @@
   </filter>
   <filter-mapping>
     <filter-name>LoginFilter</filter-name>
-    <url-pattern>/*</url-pattern>
+    <url-pattern>/AdminPanel/*</url-pattern>
   </filter-mapping>
 </web-app>

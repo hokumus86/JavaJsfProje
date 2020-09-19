@@ -56,6 +56,7 @@ public class LoginBean {
 			System.out.println(username + " " + password);
 			return navigationbean.redirectIndex();
 		}
+		
 		FacesMessage msg = new FacesMessage("Login error!", "ERROR MSG");
 		msg.setSeverity(FacesMessage.SEVERITY_ERROR);
 		FacesContext.getCurrentInstance().addMessage(null, msg);

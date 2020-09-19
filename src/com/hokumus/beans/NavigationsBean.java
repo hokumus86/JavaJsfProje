@@ -8,7 +8,7 @@ import javax.faces.bean.SessionScoped;
 public class NavigationsBean {
 	
 	public String redirectIndex() {
-		return "/index.jsf";
+		return "/AdminPanel/index.jsf?faces-redirect=true";
 		
 	}
 

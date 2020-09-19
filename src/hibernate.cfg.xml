@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+  <session-factory>
+    <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+    <property name="hibernate.connection.url">jdbc:postgresql://localhost:5432/SATISDB</property>
+    <property name="hibernate.connection.username">postgres</property>
+    <property name="hibernate.connection.password">root</property>
+    
+    <property name="hibernate.hbm2ddl.auto">update</property>
+    <property name="hibernate.show_sql">true</property>
+    
+    <mapping class="com.hokumus.model.Categori"></mapping>
+    <mapping class="com.hokumus.model.LogModel"></mapping>
+    <mapping class="com.hokumus.model.Customer"></mapping>
+    <mapping class="com.hokumus.model.Property"></mapping>
+    <mapping class="com.hokumus.model.Images"></mapping>
+    <mapping class="com.hokumus.model.Sales"></mapping>
+    <mapping class="com.hokumus.model.SalesProperty"></mapping>
+    <mapping class="com.hokumus.model.Stocks"></mapping>
+    <mapping class="com.hokumus.model.Product"></mapping>
+    <mapping class="com.hokumus.model.UsersModel"></mapping>
+    <mapping class="com.hokumus.model.Comments"></mapping>
+    
+     
+    
+    
+  </session-factory>
+</hibernate-configuration>

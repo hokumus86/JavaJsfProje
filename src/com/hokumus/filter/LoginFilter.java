@@ -25,8 +25,11 @@ public class LoginFilter implements Filter {
 			String path = ((HttpServletRequest)request).getContextPath();
 			((HttpServletResponse)response).sendRedirect(path+"/login.jsf");
 		}
+		else if(!loginbean.isIslogedin()) {
+			String path = ((HttpServletRequest)request).getContextPath();
+			((HttpServletResponse)response).sendRedirect(path+"/login.jsf");
+		}
 		chain.doFilter(request, response);
-		// TODO Auto-generated method stub
 		
 	}
 

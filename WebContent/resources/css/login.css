@@ -1,11 +1,11 @@
 body{
- background-color: #2B2B2B;
+ background-color: #2B2B2B;   
 }
 
 *{
     font-family: 'Raleway', sans-serif;
     color : #FFF;
-
+    
 }
 
 
@@ -33,13 +33,13 @@ h1{
     background: -ms-linear-gradient(45deg,  #f32d27 5%,#ff6b45 99%); /* IE10+ */
     background: linear-gradient(45deg,  #f32d27 5%,#ff6b45 99%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f32d27', endColorstr='#ff6b45',GradientType=1 ); /* IE6-8 fallback on horizontal gradient */
-
-    width:35%;
+    
+   /* width:35%;*/
    /* height:70%; */
-    position:absolute;
-    top:15%;
-    left:32.5%;
-
+   /* position:absolute;*/
+    top:60px;
+    /*left:32.5%;*/
+    
     -webkit-box-shadow: 0px 0px 8px 0px rgba(50, 50, 50, 0.54);
 -moz-box-shadow:    0px 0px 8px 0px rgba(50, 50, 50, 0.54);
 box-shadow:         0px 0px 8px 0px rgba(50, 50, 50, 0.54);
@@ -57,13 +57,13 @@ box-shadow:         0px 0px 8px 0px rgba(50, 50, 50, 0.54);
         background: -ms-linear-gradient(45deg,  #f32d27 5%,#ff6b45 99%); /* IE10+ */
         background: linear-gradient(45deg,  #f32d27 5%,#ff6b45 99%); /* W3C */
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f32d27', endColorstr='#ff6b45',GradientType=1 ); /* IE6-8 fallback on horizontal gradient */
-
-        width:90%;
+        
+     /*   width:90%;
         height:80%;
         position:absolute;
         top:10%;
-        left:5%;
-
+        left:5%;*/
+        
         -webkit-box-shadow: 0px 0px 8px 0px rgba(50, 50, 50, 0.54);
 -moz-box-shadow:    0px 0px 8px 0px rgba(50, 50, 50, 0.54);
 box-shadow:         0px 0px 8px 0px rgba(50, 50, 50, 0.54);
@@ -93,7 +93,7 @@ box-shadow:         0px 0px 8px 0px rgba(50, 50, 50, 0.54);
 .login_control{
     background-color:#FFF;
     padding:10px;
-
+    
 }
 
 .control {
